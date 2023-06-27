@@ -18,7 +18,7 @@ const projects = [
     description:
       "The world's first DAO operated NFT Incubator, launchpad and game platform. I was on charge of frontend development of mint and sacrifice pages, also smart contract and backend development for sacrifice",
     image: "/projects/2.png",
-    link: "https://cryptolegions.app/",
+    link: "https://godznft.com/",
     skills: ['Solana', 'Next.js','Tailwind CSS', 'Node.js']
   },
   {
