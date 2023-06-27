@@ -66,7 +66,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-lg text-[#32e0ff]  hover:text-white"
+                      "block lg:inline-block text-xl font-semibold text-[#32e0ff]  hover:text-white"
                     }
                     activeClass="active"
                     spy={true}

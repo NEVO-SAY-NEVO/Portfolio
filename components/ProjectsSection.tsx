@@ -190,7 +190,7 @@ const ProjectsSection = () => {
                 <Image src={project.image} alt="Location Unknown" width={325} height={450} className='img-project'/>
                 <div className="details">
                   <h1>{project.name}</h1>
-                  <a href={project.link} className='font-semibold mb-1'>{project.link}</a>
+                  <a href={project.link} className='font-semibold mb-1 mb-2'>{project.link}</a>
                   <div className="tags">
                     {
                       project.skills.map((skill, index) => (
