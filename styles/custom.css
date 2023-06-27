@@ -697,6 +697,7 @@ body{
 
 .details .tags {
   display: flex;
+  margin-top: 5px;
   gap: .375em;
   margin-bottom: .875em;
   font-size: .85em;
