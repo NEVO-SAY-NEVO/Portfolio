@@ -26,13 +26,14 @@ import php from '../public/assets/new/php.png'
 import postgre from '../public/assets/new/postgresql.png'
 import python from '../public/assets/new/python.png'
 import vue from '../public/assets/new/vue.png'
+import wordpress from '../public/assets/new/wordpress.png'
 
 
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const skillArray = [html, css, js, typescript, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa,  mongo, mysql, postgre, firebase, github, vscode, web3, ether];
-  const skillTextArray = ['Html', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular',  'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'Data Structure', 'MongoDB', 'MySQL', 'PostgreSQL','Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether'];
+  const skillArray = [html, css, js, typescript, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa,  mongo, mysql, postgre, firebase, github, vscode, web3, ether, wordpress];
+  const skillTextArray = ['Html', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular',  'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'Data Structure', 'MongoDB', 'MySQL', 'PostgreSQL','Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether', 'WordPress'];
   return (
     <div className='w-full lg:h-screen bg-[#5d247c49] rounded-t-2xl p-6 mt-8' id='skills'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center md:items-center h-full'>
