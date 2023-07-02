@@ -35,11 +35,11 @@ const Skills = () => {
   const skillArray = [html, css, js, typescript, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa,  mongo, mysql, postgre, firebase, github, vscode, web3, ether, wordpress];
   const skillTextArray = ['Html', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular',  'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'Data Structure', 'MongoDB', 'MySQL', 'PostgreSQL','Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether', 'WordPress'];
   return (
-    <div className='w-full lg:h-screen bg-[#5d247c49] rounded-t-2xl p-6 mt-8' id='skills'>
+    <div className='w-full lg:h-screen bg-[#5d247c49] rounded-t-2xl p-6 mt-32' id='skills'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center md:items-center h-full'>
         <motion.div initial={{ opacity: 0 }}
           whileInView={{ y: [-50, 0], opacity: 1 }} className='relative text-6xl font-header font-semibold text-[#ffffff] lg:bottom-[70px] hover:text-6xl pb-7 md:mb-0 mb-3'>
-          <div className='mt-[100px]'>Best Skill Set</div>
+          <div className='mt-[100px] lg:mt-[450px]'>Best Skill Set</div>
         </motion.div>
         <motion.div initial={{ opacity: 0 }}
           whileInView={{ y: [-50, 0], opacity: 1 }} className='grid md:grid-cols-3 lg:grid-cols-4 gap-10'>

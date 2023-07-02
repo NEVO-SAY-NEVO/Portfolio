@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="bg-[#5d247c49] p-6">
       <motion.div initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }} className='my-12 pb-2 md:pt-10'>
+        whileInView={{ y: [-50, 0], opacity: 1 }} className='my-12 pb-2 md:pt-10 lg:mt-[450px]'>
           <h1 className="text-6xl font-header text-white hover:text-6xl text-center font-semibold pb-12">
             About Me
           </h1>
