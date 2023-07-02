@@ -25,12 +25,12 @@ const Footer = () => {
             <FaDiscord className="hover:-translate-y-1 transition-transform cursor-pointer text-white dark:text-neutral-100"
               size={30}/>
           </a>
-          <a href="https://join.skype.com/invite/sGresLsAZpz1" rel="noreferrer" target="_blank">
+          {/* <a href="https://join.skype.com/invite/sGresLsAZpz1" rel="noreferrer" target="_blank">
             <AiOutlineSkype
               className="hover:-translate-y-1 transition-transform cursor-pointer text-white dark:text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

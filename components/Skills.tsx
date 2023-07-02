@@ -15,11 +15,24 @@ import vscode from '../public/assets/vscode.png'
 import material from '../public/assets/material.png'
 import dsa from '../public/assets/data-structure.png'
 import web3 from '../public/assets/Web3.png'
+import amazon from '../public/assets/new/amazon.png'
+import angular from '../public/assets/new/angular.png'
+import c from '../public/assets/new/c.png'
+import ether from '../public/assets/new/ether.png'
+import mongo from '../public/assets/new/mongo.png'
+import mysql from '../public/assets/new/mysql.png'
+import node from '../public/assets/new/node.png'
+import php from '../public/assets/new/php.png'
+import postgre from '../public/assets/new/postgresql.png'
+import python from '../public/assets/new/python.png'
+import vue from '../public/assets/new/vue.png'
+
+
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const skillArray = [react, redux, typescript, web3, firebase, next, html, css, js, material, bootstrap, tailwind, dsa, github, vscode];
-  const skillTextArray = ['React', 'Redux', 'TypeScript', 'Web3', 'Firebase', 'Next.js', 'Html', 'CSS', 'JavaScript', 'Material UI', 'Bootstrap', 'Tailwind CSS', 'Data Structure', 'Github', 'Visual Studio'];
+  const skillArray = [html, css, js, typescript, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa,  mongo, mysql, postgre, firebase, github, vscode, web3, ether];
+  const skillTextArray = ['Html', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular',  'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'Data Structure', 'MongoDB', 'MySQL', 'PostgreSQL','Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether'];
   return (
     <div className='w-full lg:h-screen bg-[#5d247c49] rounded-t-2xl p-6 mt-8' id='skills'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center md:items-center h-full'>

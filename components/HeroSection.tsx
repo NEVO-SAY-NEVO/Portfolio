@@ -15,10 +15,10 @@ const HeroSection = () => {
       <div className="flex flex-col flex-shrink-0 text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-32 lg:flex-row lg:space-x-4 lg:text-left relative">
         {/* <canvas id="canvas" width="1400" height="600"></canvas> */}
         <div className="flex flex-col items-center justify-center shrink-0 font-header md:mt-2 md:w-3/5">
-          <h1 className='font-bold text-4xl md:text-6xl lg:text-7xl text-center mb-10 pt-5 text-white mx-auto hero-header'>
+          <h1 className='font-bold text-4xl md:text-6xl lg:text-8xl text-center mb-10 pt-5 text-white mx-auto hero-header'>
             Felix Martel
           </h1>
-          <div className='flex items-center text-xl md:text-3xl font-semibold mt-4 lg:text-4xl mb-20 loader'>
+          <div className='flex items-center text-xl md:text-3xl font-semibold mt-4 lg:text-5xl mb-20 loader'>
             <div className='font-semibold'>F</div>
             <div className='font-semibold'>U</div>
             <div className='font-semibold'>L</div>
