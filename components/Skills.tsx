@@ -46,8 +46,8 @@ const Skills = () => {
           {
             skillArray.map((skill, index) => (
               <div key={index} className='px-8 py-5 flex items-center justify-center bg-[#312ed663] shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='font-header text-lg font-semibold text-[#ffffff] hover:text-lg pr-4'>{skillTextArray[index]}</div>
-                <div className={`${skill == web3 ? 'scale-[200%]' : skill == next ? 'scale-150' : ''}`}><Image src={skill} alt='skillImage' width={35} height={35} /></div>
+                <div className='font-header text-2xl tracking-wider font-semibold text-[#ffffff] hover:text-lg pr-4'>{skillTextArray[index]}</div>
+                <div className={`${skill == web3 ? 'scale-[200%]' : skill == next ? 'scale-150' : ''}`}><Image src={skill} alt='skillImage' width={30} height={30} /></div>
               </div>
             ))
           }
