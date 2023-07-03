@@ -33,8 +33,8 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full font-header mx-auto  px-4 sm:px-[100px] fixed top-0 z-50 text-[#32e0ff] cursor-pointer hover:text-white shadow-lg shadow-[#000000d2] header-gradient">
-      <div className="justify-between md:items-center md:flex">
+    <header className="w-full font-header mx-auto px-4 sm:px-[100px] fixed top-0 z-50 text-[#32e0ff] cursor-pointer hover:text-white shadow-lg shadow-[#000000d2] header-gradient">
+      <div className="justify-between px-20 md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-5 md:py-6 md:block">
             <Link to="home">

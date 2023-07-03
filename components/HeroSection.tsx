@@ -12,7 +12,7 @@ interface Window {
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col flex-shrink-0 text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-32 lg:flex-row lg:space-x-4 lg:text-left relative">
+      <div className=" flex flex-col flex-shrink-0 text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-32 lg:flex-row lg:space-x-4 lg:text-left relative">
         {/* <canvas id="canvas" width="1400" height="600"></canvas> */}
         <div className={`${styles.tri} opacity-70`}>
           {[...Array(3)].map((_, index) => (
@@ -23,7 +23,7 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-center justify-center shrink-0 font-header md:mt-2 md:w-3/5">
+        <div className="flex flex-col items-center justify-center shrink-0 font-header md:pt-[120px] md:w-3/5">
           <h1 className='font-bold text-4xl md:text-6xl lg:text-8xl text-center mb-10 pt-5 text-white mx-auto hero-header'>
             Felix Martel
           </h1>
@@ -59,18 +59,6 @@ const HeroSection = () => {
             className="rounded-2xl"
           />
         </div>
-      </div>
-      <div className="flex flex-row items-center text-center justify-center mb-[100px]">
-        <Link
-          to="skills"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <HiArrowDown size={35} color="#0cbeeb" className="animate-bounce cursor-pointer" />
-        </Link>
       </div>
       <Skills />
     </section>

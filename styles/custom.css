@@ -203,7 +203,7 @@ body{
 }
 
 .box-gradient {
-  background: linear-gradient(to right, #901deede 0%, #0319da59 50%, #02e9fad5 100% );
+  background: linear-gradient(to right, #8d02ff 0%, #0319da59 50%, #02e9fad5 100% );
   padding: 40px;
   padding-bottom: 100px;
   /* border: 1px solid transparent; */
@@ -213,7 +213,7 @@ body{
   padding: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: linear-gradient(to right, #7103cc 0%, #4f899b 50%, #030257 100% ) !important;
+  background: linear-gradient(to right, #7103cc 0%, #0806a3 100% ) !important;
 }
 @property --hue {
   syntax: "<number>";
