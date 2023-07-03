@@ -32,28 +32,29 @@ import wordpress from '../public/assets/new/wordpress.png'
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const skillArray = [html, css, js, typescript, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa,  mongo, mysql, postgre, firebase, github, vscode, web3, ether, wordpress];
-  const skillTextArray = ['Html', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular',  'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'Data Structure', 'MongoDB', 'MySQL', 'PostgreSQL','Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether', 'WordPress'];
+  const skillArray = [html, css, typescript, js, react, redux, next, vue, angular, material, bootstrap, tailwind, node, php, c, python, dsa, mongo, mysql, postgre, firebase, github, vscode, web3, ether, amazon, wordpress];
+  const skillTextArray = ['Html', 'CSS', 'TypeScript', 'JavaScript', 'React', 'Redux', 'Next.js', 'Vue', 'Angular', 'Material UI', 'Bootstrap', 'Tailwind CSS', 'NodeJS', 'PHP', 'C', 'Python', 'D Structure', 'MongoDB', 'MySQL', 'PostgreSQL', 'Firebase', 'Github', 'Visual Studio', 'Web3', 'Ether', 'Amazon', 'WordPress'];
   return (
-    <div className='w-full lg:h-screen bg-[#5d247c49] rounded-t-2xl p-6 mt-32' id='skills'>
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center md:items-center h-full'>
-        <motion.div initial={{ opacity: 0 }}
-          whileInView={{ y: [-50, 0], opacity: 1 }} className='relative text-6xl font-header font-semibold text-[#ffffff] lg:bottom-[70px] hover:text-6xl pb-7 md:mb-0 mb-3'>
-          <div className='mt-[100px] lg:mt-[450px]'>Best Skill Set</div>
-        </motion.div>
-        <motion.div initial={{ opacity: 0 }}
-          whileInView={{ y: [-50, 0], opacity: 1 }} className='grid md:grid-cols-3 lg:grid-cols-4 gap-10'>
-          {
-            skillArray.map((skill, index) => (
-              <div key={index} className='px-8 py-5 flex items-center justify-center bg-[#312ed663] shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='font-header text-2xl tracking-wider font-semibold text-[#ffffff] hover:text-lg pr-4'>{skillTextArray[index]}</div>
-                <div className={`${skill == web3 ? 'scale-[200%]' : skill == next ? 'scale-150' : ''}`}><Image src={skill} alt='skillImage' width={30} height={30} /></div>
-              </div>
-            ))
-          }
-        </motion.div>
+    <motion.div initial={{ opacity: 0 }}
+      whileInView={{ y: [-50, 0], opacity: 1 }} className="w-full" >
+      <div className='w-full rounded-t-2xl mt-32 mb-32' id='skills'>
+        <div className='max-w-[1240px] mx-auto flex flex-col md:items-center box-gradient'>
+          <div className='relative text-6xl font-header font-semibold text-[#ffffff] hover:text-6xl pb-7 md:mb-0 mb-3'>
+            <div className='mt-[100px] mb-20'>Best Skill Set</div>
+          </div>
+          <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-10 mb-20'>
+            {
+              skillArray.map((skill, index) => (
+                <div key={index} className='px-8 py-5 flex items-center justify-center bg-[#312ed663] shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                  <div className='font-header text-2xl tracking-wider font-semibold text-[#ffffff] hover:text-lg pr-4'>{skillTextArray[index]}</div>
+                  <div className={`${skill == web3 ? 'scale-[200%]' : skill == next ? 'scale-150' : ''}`}><Image src={skill} alt='skillImage' width={30} height={30} /></div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

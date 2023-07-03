@@ -1,8 +1,7 @@
+"use client"
 import React from "react"
 import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -11,7 +10,7 @@ const projects = [
       "Crypto Legions is a cutting edge Play-To-Earn NFT game on the BSC network. Bloodstone is the native utility token that's used for: Minting in-game NFTs. I was on charge of frontend development and smart contract",
     image: "/projects/1.jpg",
     link: "https://cryptolegions.app/",
-    skills: ['Solidity', 'React / Next.js','Material UI']
+    skills: ['Solidity', 'React / Next.js', 'Material UI']
   },
   {
     name: "GODz of Solaria",
@@ -19,7 +18,7 @@ const projects = [
       "The world's first DAO operated NFT Incubator, launchpad and game platform. I was on charge of frontend development of mint and sacrifice pages, also smart contract and backend development for sacrifice",
     image: "/projects/2.png",
     link: "https://godznft.com/",
-    skills: ['Solana', 'Next.js','Tailwind CSS', 'Node.js']
+    skills: ['Solana', 'Next.js', 'Tailwind CSS', 'Node.js']
   },
   {
     name: "Neon Sabers",
@@ -27,7 +26,7 @@ const projects = [
       "Neon Sabers is one stop shop for highly premium and durable Neon Lightsabers.Our lightsabers are highly customizable, you can choose the color of Hilt, type of blade and attach accessories of your choice.",
     image: "/projects/3.png",
     link: "https://neonsabers.com/",
-    skills: ['React / Next.js','Tailwind CSS']
+    skills: ['React / Next.js', 'Tailwind CSS']
   },
   {
     name: "MailMerge365",
@@ -43,7 +42,7 @@ const projects = [
       "Unjabbed is a unique dating app exclusively for those who have chosen not to receive the COVID-19 vaccine. I was the only developer for this project.",
     image: "/projects/5.png",
     link: "https://unjabbed.app/web-app/",
-    skills: ['Flutter','Firebase']
+    skills: ['Flutter', 'Firebase']
   },
   {
     name: "Astronaud",
@@ -51,7 +50,7 @@ const projects = [
       "Astronaud helps YouTube Networks, YouTube Channels, Artists, Musicians and many others. I was in charge of UI/UX design and development.",
     image: "/projects/8.png",
     link: "https://astronaud.com/",
-    skills: ['Next.js','Material UI']
+    skills: ['Next.js', 'Material UI']
   },
   {
     name: "Degen Taxi",
@@ -59,7 +58,7 @@ const projects = [
       "Crash game based on Solana. The animation creation using Unity, frontend development, design of game engine was my responsibility. Blockchain Full Stack Developer role.",
     image: "/projects/7.png",
     link: "https://degentaxi.io/",
-    skills: ['Rust', 'React.js','Unity']
+    skills: ['Rust', 'React.js', 'Unity']
   },
   {
     name: "College Pro Students",
@@ -67,7 +66,7 @@ const projects = [
       "Core College Pro skills that you will learn include effective time management, team leadership, conflict resolution, and relational selling.",
     image: "/projects/9.png",
     link: "https://student.collegepro.com/",
-    skills: ['React.js','Tailwind CSS', 'Express.js']
+    skills: ['React.js', 'Tailwind CSS', 'Express.js']
   },
   {
     name: "JPG Print",
@@ -75,7 +74,7 @@ const projects = [
       "JpgCustom Printing is a company of creative designers and artists who turn your dream design into a perfect piece of art. Full stack developer role.",
     image: "/projects/10.png",
     link: "https://jpgcustomtshirtprinting.com/",
-    skills: ['React.js','Tailwind CSS', 'Express.js']
+    skills: ['React.js', 'Tailwind CSS', 'Express.js']
   },
   {
     name: "Moduluc",
@@ -83,7 +82,7 @@ const projects = [
       "Foundations to build a Metaverse. Frontend development.",
     image: "/projects/4.png",
     link: "https://moduluc.com/",
-    skills: ['Next.js','Tailwind CSS', 'Web3.js']
+    skills: ['Next.js', 'Tailwind CSS', 'Web3.js']
   },
   {
     name: "QUIZ clothing",
@@ -177,46 +176,43 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="bg-[#5d247c49] rounded-b-2xl mb-10 p-6 pb-8">
-      <h1 className="text-6xl font-header text-white hover:text-6xl text-center font-semibold pb-[100px]">
-        Projects
-      </h1>
+    <motion.div initial={{ opacity: 0 }}
+      whileInView={{ y: [-50, 0], opacity: 1 }} className="w-full">
+      <div className="w-full rounded-t-2xl mt-32 mb-40">
+        <section id="projects" className="max-w-[1240px] mx-auto flex flex-col md:items-center box-gradient">
+          <h1 className="text-6xl font-header text-white hover:text-6xl text-center font-semibold mt-20 mb-20">
+            Projects
+          </h1>
 
-      <div className="wrapper-project">
-        {projects.map((project, idx) => {
-          return (
-            <div className="card-project" key={idx}>
-              <div className="poster font-header">
-                <Image src={project.image} alt="Location Unknown" width={325} height={450} className='img-project'/>
-                <div className="details">
-                  <h1>{project.name}</h1>
-                  <a href={project.link} className='font-semibold mb-1 mb-2'>{project.link}</a>
-                  <div className="tags">
-                    {
-                      project.skills.map((skill, index) => (
-                        <span className="tag" key={index}>{skill}</span>
-                      ))
-                    }
+          <div className="wrapper-project mb-9">
+            {projects.map((project, idx) => {
+              return (
+                <div className="card-project" key={idx}>
+                  <div className="poster font-header">
+                    <Image src={project.image} alt="Location Unknown" width={325} height={450} className='img-project' />
+                    <div className="details">
+                      <h1>{project.name}</h1>
+                      <a href={project.link} className='font-semibold mb-1 mb-2'>{project.link}</a>
+                      <div className="tags">
+                        {
+                          project.skills.map((skill, index) => (
+                            <span className="tag" key={index}>{skill}</span>
+                          ))
+                        }
+                      </div>
+                      <p className="desc">
+                        {project.description}
+                      </p>
+                    </div>
                   </div>
-                  <p className="desc">
-                    {project.description}
-                  </p>
-                  {/* <div className="cast">
-                  <h3>Cast</h3>
-                  <ul>
-                    <li><img src="https://i.postimg.cc/jqgkqhSb/cast-11.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
-                    <li><img src="https://i.postimg.cc/8P7X7r7r/cast-12.jpg" alt="Rebecca Floyd" title="Rebecca Floyd"></li>
-                    <li><img src="https://i.postimg.cc/2SvHwRFk/cast-13.jpg" alt="Antonio Herrera" title="Antonio Herrera"></li>
-                  </ul>
-                </div> */}
                 </div>
-              </div>
-            </div>
-          )
-        })}
+              )
+            })}
 
+          </div>
+        </section>
       </div>
-    </section>
+    </motion.div>
   )
 }
 

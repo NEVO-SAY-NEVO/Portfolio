@@ -199,7 +199,15 @@ body{
 .new-bg {
   /* background-image: url('../public/bg-dark1.jpg')
    */
-  background: linear-gradient(to top, #7f1bd1ce 0%, #700670dc 60%, #2e08b4c9 90% , #09036380);;
+  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 80%, #def1f3 , #06cbfc65);
+}
+
+.box-gradient {
+  background: linear-gradient(to right, #901deede 0%, #0319da59 50%, #02e9fad5 100% );
+  padding: 40px;
+  padding-bottom: 100px;
+  /* border: 1px solid transparent; */
+  border-radius: 20px;
 }
 
 @property --hue {
