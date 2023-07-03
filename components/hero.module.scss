@@ -1,0 +1,99 @@
+$rings: 30;
+.tri {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 50px;
+  height: 50px;
+
+  .side {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform-origin: center center;
+  
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        transform: translateX(-200px + 100*$i);
+      }
+    }
+
+    &:nth-child(2) {
+      transform: translateY(-150px);
+    }
+
+    .ring {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: white;
+      animation-name: rotate, cromatic;
+      animation-duration: 3s, 3s;
+      animation-timing-function: linear, linear;
+      animation-iteration-count: infinite, infinite;
+      opacity: 0.5;
+      box-shadow: 0 0 30px black;
+      border-radius: 20%;
+    }
+  }
+}
+
+@for $i from 0 through $rings {
+  .side:nth-child(1) .ring:nth-child(#{$i}) {
+    margin: 0 0 0 200/$rings*$i+px;
+    z-index: $i;
+    animation-delay: $i/ $rings +s;
+  }
+}
+
+@for $i from 0 through $rings {
+  .side:nth-child(2) .ring:nth-child(#{$i}) {
+    margin: 150/$rings*$i+px 0 0 -100/$rings*$i+px;
+    z-index: $rings - $i;
+    animation-delay: 2+$i/ $rings +s;
+  }
+}
+
+@for $i from 0 through $rings {
+  .side:nth-child(3) .ring:nth-child(#{$i}) {
+    margin: -150/$rings*$i+px 0 0 -100/$rings*$i+px;
+    z-index: $i;
+    animation-delay: 1+$i/ $rings +s;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cromatic {
+  0% {
+    background-color: #FFFF00;
+  }
+
+  15% {
+    background-color: #008F59;
+  }
+
+  30% {
+    background-color: #2771B2;
+  }
+
+  45% {
+    background-color: #6E3795;
+  }
+
+  60% {
+    background-color: #FF0000;
+  }
+
+  75% {
+    background-color: #FF9201;
+  }
+
+  100% {
+    background-color: #FFFF00;
+  }
+}

@@ -199,7 +199,7 @@ body{
 .new-bg {
   /* background-image: url('../public/bg-dark1.jpg')
    */
-  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 80%, #def1f3 , #06cbfc65);
+  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 75%, #7606b6 90%, #8664e6 95%, #76058d 100%);
 }
 
 .box-gradient {
@@ -209,7 +209,12 @@ body{
   /* border: 1px solid transparent; */
   border-radius: 20px;
 }
-
+.header-gradient {
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(to right, #7103cc 0%, #4f899b 50%, #030257 100% ) !important;
+}
 @property --hue {
   syntax: "<number>";
   inherits: true;
