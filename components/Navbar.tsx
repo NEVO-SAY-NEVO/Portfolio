@@ -36,10 +36,10 @@ export default function Navbar() {
     <header className="w-full font-header mx-auto px-4 sm:px-[100px] fixed top-0 z-50 text-[#32e0ff] cursor-pointer hover:text-white shadow-lg shadow-[#000000d2] header-gradient">
       <div className="justify-between px-20 md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-5 md:py-6 md:block">
+          <div className="flex items-center justify-between py-1 md:py-2 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-3xl font-bold">Felix Martel</h2>
+                <h2 className="text-3xl font-bold glow-glow">Felix Martel</h2>
               </div>
             </Link>
             <div className="md:hidden">
