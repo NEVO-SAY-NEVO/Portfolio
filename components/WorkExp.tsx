@@ -9,10 +9,10 @@ const WorkExp = () => {
 
       <TimelineEvent active>
 
-        <TimelineEvent.Title><a href='https://maddogcarclub.io/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header'>Mad Dog Car Club</a> |  10/2022 - 04/2023</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://maddogcarclub.io/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header text-3xl'>Mad Dog Car Club</a> |  10/2022 - 04/2023</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          <span className='font-header font-semibold text-[#32e0ff]'>Senior Blockchain Front End Developer & Hosting Engineer (Remote, Contract)</span><br />
+          <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>Senior Blockchain Front End Developer & Hosting Engineer (Remote, Contract)</span><br />
           -Developed the front end of 3 projects using React, SASS, Bootstrap, Tailwind, MaterialUI, TypeScript, Next.js, React Hooks, Context API, and Styled-components <br />
           -Integrated web3 parts into Ethereum, Solana and Cardano projects using web3.js and
           ethers.js<br />
@@ -32,10 +32,10 @@ const WorkExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title><a href='https://www.autoscribe.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header'>AutoScribe</a> | 03/2022 - 10/2022</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.autoscribe.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header text-3xl'>AutoScribe</a> | 03/2022 - 10/2022</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          <span className='font-header font-semibold text-[#32e0ff]'>React Full Stack Developer (Remote, Contract)</span><br />
+          <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>React Full Stack Developer (Remote, Contract)</span><br />
           -Oversaw the entire development process from start to finish using React, Django, AWS
           for 2 months<br />
           -Crafted and executed an MFA user authentication system that uplifted security by 50%,
@@ -54,10 +54,10 @@ const WorkExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title><a href='https://www.bitfinex.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header'>Bitfinex</a> | 03/2020 - 03/2022</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.bitfinex.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header text-3xl'>Bitfinex</a> | 03/2020 - 03/2022</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          <span className='font-header font-semibold text-[#32e0ff]'>Full Stack Blockchain Engineer (Remote, Full-time)</span><br />
+          <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>Full Stack Blockchain Engineer (Remote, Full-time)</span><br />
           -Created and optimized components using React and Next.js. Cut development speed by 9%<br />
           -Drove best practice implementation for 22 employees across multiple departments<br />
           -Decreased rework by 23% and costs by 15%<br />
@@ -73,10 +73,10 @@ const WorkExp = () => {
       </TimelineEvent>
       <TimelineEvent>
 
-        <TimelineEvent.Title><a href='https://www.dejero.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header'>Dejero Labs</a> | 12/2017 - 02/2020</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.dejero.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header text-3xl'>Dejero Labs</a> | 12/2017 - 02/2020</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          <span className='font-header font-semibold text-[#32e0ff]'>Full Stack Developer (Hybrid Remote, Full-Time)</span><br />
+          <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>Full Stack Developer (Hybrid Remote, Full-Time)</span><br />
           -Played a key role in the development, improvement, and operation of 7 web-based
           software using React<br />
           -Gained hands-on expertise in Node, Express, Nest, Django and other back-end
