@@ -13,7 +13,7 @@ body{
 @keyframes loading {
   to {
     text-shadow: 20px 0 70px #ff0266;
-    color: #ff0266;
+    color: #f8d8e0f5;
   }
 }
 
@@ -98,14 +98,14 @@ body{
   margin: 0;
   padding-bottom: 0.5rem;
   letter-spacing: 0.5rem;
-  color: #ff0278;
+  color: white;
   transition: all 0.3s ease;
   z-index: 3;
 }
 
 .hero-header:hover {
   transform: translate3d(0, -10px, 22px);
-  color: white;
+  color: #ff0278;
 }
 
 @property --rotate {
