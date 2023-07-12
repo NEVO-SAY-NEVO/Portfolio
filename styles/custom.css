@@ -204,7 +204,7 @@ body{
 .new-bg {
   /* background-image: url('../public/bg-dark1.jpg')
    */
-  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 75%, #7606b6 80%,#3b06b6 90%,#160501d5 95%, rgba(135, 100, 230, 0) 100%);
+  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 75%, #7606b6 80%,#3b06b6 90%, #160501 95%, rgba(5, 0, 0, 0.1) 100%);
 }
 .glow-glow {
   animation: glowText 1s linear infinite alternate;
@@ -311,7 +311,8 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #87def8 0%, #a484fa 30%, #b9b1fa 70%, #eb8eee 100% );
+  /* background: linear-gradient(to right, #87def8 0%, #a484fa 30%, #b9b1fa 70%, #eb8eee 100% ); */
+  background: black;
   border-radius: calc(calc(var(--card-radius) * 0.9));
   display: flex;
   align-items: center;

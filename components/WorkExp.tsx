@@ -13,19 +13,19 @@ const WorkExp = () => {
 
         <TimelineEvent.Description>
           <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>Senior Blockchain Front End Developer & Hosting Engineer (Remote, Contract)</span><br />
-          -Developed the front end of 3 projects using React, SASS, Bootstrap, Tailwind, MaterialUI, TypeScript, Next.js, React Hooks, Context API, and Styled-components <br />
-          -Integrated web3 parts into Ethereum, Solana and Cardano projects using web3.js and
-          ethers.js<br />
-          -Resolved image optimization and utilized a cookie parser to improve the performance of
-          page loading by 240%<br />
-          -Transformed the user experience by incorporating lazy loading via a streamlined and
-          effective paginated API<br />
-          -Resulted in a 60% improvement in page loading speed and substantial decrease in
-          bounce rates<br />
-          -Collaborated closely with the designer and backend developer, maintaining good
-          teamwork through communication channels such as Slack, Trello, and weekly scrum
-          meetings<br />
-          -Hosted 4 projects to live domain
+            -Developed the front end of 3 projects using React, SASS, Bootstrap, Tailwind, MaterialUI, TypeScript, Next.js, React Hooks, Context API, and Styled-components <br />
+            -Integrated web3 parts into Ethereum, Solana and Cardano projects using web3.js and
+            ethers.js<br />
+            -Resolved image optimization and utilized a cookie parser to improve the performance of
+            page loading by 240%<br />
+            -Transformed the user experience by incorporating lazy loading via a streamlined and
+            effective paginated API<br />
+            -Resulted in a 60% improvement in page loading speed and substantial decrease in
+            bounce rates<br />
+            -Collaborated closely with the designer and backend developer, maintaining good
+            teamwork through communication channels such as Slack, Trello, and weekly scrum
+            meetings<br />
+            -Hosted 4 projects to live domain
         </TimelineEvent.Description>
 
       </TimelineEvent>
