@@ -90,10 +90,10 @@ const WorkExp = () => {
       </TimelineEvent>
       <TimelineEvent last>
 
-        <TimelineEvent.Title><a href='https://www.reddoorz.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>RedDoorz</a> | 09/2016 - 10/2017</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.reddoorz.com/' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease font-header text-3xl'>RedDoorz</a> | 09/2016 - 10/2017</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          <span className='font-header text-[#32e0ff]'>React Front End Developer & UI Designer (Onsite, Full-Time)</span><br />
+          <span className='font-header font-semibold  text-2xl text-[#32e0ff]'>React Front End Developer & UI Designer (Onsite, Full-Time)</span><br />
           -Contributed to agile team as a front end developer<br />
           -Designed and deployed a fully responsive web user interface for 5 clients using the
           mobile-first approach<br />

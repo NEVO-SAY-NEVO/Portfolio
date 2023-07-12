@@ -15,16 +15,16 @@ const AboutSection = () => {
             </h1>
             <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left text-[#32e0ff]">
               <div className="p-4 w-full text-justify ">
-                <h1 className="text-center text-3xl  font-header font-bold mb-6 ">
+                <h1 className="text-center text-3xl  font-header font-bold mb-6 glow-glow">
                   <span className="text-[#e90cfd]">React</span> Full Stack Developer
                 </h1>
-                <h1 className="text-center text-3xl  font-header font-bold mb-6 ">
+                <h1 className="text-center text-3xl  font-header font-bold mb-6 glow-glow">
                   <span className="text-[#e90cfd]">BlockChain</span> Front End Developer
                 </h1>
-                <h1 className="text-center text-3xl  font-header font-bold mb-6 ">
+                <h1 className="text-center text-3xl  font-header font-bold mb-6 glow-glow">
                   <span className="text-[#e90cfd]">CMS</span> Developer
                 </h1>
-                <h1 className="text-center text-3xl  font-header font-bold mb-6 ">
+                <h1 className="text-center text-3xl  font-header font-bold mb-6 glow-glow">
                   <span className="text-[#e90cfd]">Figma</span> Designer
                 </h1>
                 <br />

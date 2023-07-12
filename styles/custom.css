@@ -17,6 +17,11 @@ body{
   }
 }
 
+.new-bg-bg {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: url('../public/burn.png')
+}
 .loader div:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -93,14 +98,14 @@ body{
   margin: 0;
   padding-bottom: 0.5rem;
   letter-spacing: 0.5rem;
-  color: white;
+  color: #ff0278;
   transition: all 0.3s ease;
   z-index: 3;
 }
 
 .hero-header:hover {
   transform: translate3d(0, -10px, 22px);
-  color: #ff0266;
+  color: white;
 }
 
 @property --rotate {
@@ -199,7 +204,7 @@ body{
 .new-bg {
   /* background-image: url('../public/bg-dark1.jpg')
    */
-  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 75%, #7606b6 90%, #8664e6 95%, #76058d 100%);
+  background: linear-gradient(to top, #230a52e8 0%, #3e07d6 60%, #0b08b4fd 75%, #7606b6 80%,#3b06b6 90%,#160501d5 95%, rgba(135, 100, 230, 0) 100%);
 }
 .glow-glow {
   animation: glowText 1s linear infinite alternate;
@@ -207,10 +212,10 @@ body{
 
 @keyframes glowText {
   from {
-    text-shadow: 0 0 20px currentColor;
+    text-shadow: 0 0 30px currentColor;
   }
   to {
-    text-shadow: 0 0 30px currentColor;
+    text-shadow: 0 0 50px currentColor;
   }
 }
 
@@ -225,7 +230,7 @@ body{
   padding: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: linear-gradient(to bottom, #7103cc 0%, #8c00ff 40%, #8c00ff 60%, #7103cc 100% ) !important;
+  background: linear-gradient(to bottom, #000000 0%, #251111 10%, rgba(33, 4, 56, 0.164) 100% ) !important;
 }
 @property --hue {
   syntax: "<number>";

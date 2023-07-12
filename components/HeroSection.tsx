@@ -12,6 +12,7 @@ interface Window {
 const HeroSection = () => {
   return (
     <section id="home">
+      <div className="absolute inset-0 left-0 top-[-30px]  w-screen h-screen bg-cover bg-center new-bg-bg" />
       <div className=" flex flex-col flex-shrink-0 text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-32 lg:flex-row lg:space-x-4 lg:text-left relative">
         {/* <canvas id="canvas" width="1400" height="600"></canvas> */}
         <div className={`${styles.tri} opacity-90`}>
@@ -24,7 +25,7 @@ const HeroSection = () => {
           ))}
         </div>
         <div className="flex flex-col items-center justify-center shrink-0 font-header md:pt-20 md:w-3/5">
-          <div className='font-bold text-4xl md:text-6xl lg:text-8xl text-center mb-10 pt-5 text-white mx-auto hero-header'>
+          <div className='font-bold text-4xl md:text-6xl lg:text-[110px] text-center mb-10 pt-5 mx-auto hero-header'>
             <p className="glow-glow ">Felix Martel</p>
           </div>
           <div className='flex items-center text-xl md:text-3xl mt-4 lg:text-5xl mb-20 loader'>

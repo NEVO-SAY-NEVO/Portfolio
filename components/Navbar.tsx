@@ -33,7 +33,7 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full font-header mx-auto px-4 sm:px-[100px] fixed top-0 z-50 text-[#32e0ff] cursor-pointer hover:text-white shadow-lg shadow-[#000000d2] header-gradient">
+    <header className="w-full font-header mx-auto px-4 sm:px-[100px] fixed top-0 z-50 text-white cursor-pointer hover:text-[#32e0ff] shadow-lg shadow-[#000000d2] header-gradient">
       <div className="justify-between px-20 md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-1 md:py-2 md:block">
@@ -44,7 +44,7 @@ export default function Navbar() {
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-[#32e0ff] hover:text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-white hover:text-[#32e0ff] rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -66,7 +66,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-xl font-semibold text-[#32e0ff]  hover:text-white"
+                      "block lg:inline-block text-xl font-semibold text-white hover:text-[#32e0ff]"
                     }
                     activeClass="active"
                     spy={true}
