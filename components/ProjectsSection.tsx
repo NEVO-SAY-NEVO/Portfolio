@@ -187,16 +187,16 @@ const ProjectsSection = () => {
           <div className="wrapper-project mb-9">
             {projects.map((project, idx) => {
               return (
-                <div className="card-project" key={idx}>
-                  <div className="poster font-header">
+                <div className="card-project text-white" key={idx}>
+                  <div className="poster font-header ">
                     <Image src={project.image} alt="Location Unknown" width={325} height={450} className='img-project' />
                     <div className="details">
-                      <h1>{project.name}</h1>
-                      <a href={project.link} className='font-semibold mb-1 mb-2'>{project.link}</a>
+                      <h1 className="">{project.name}</h1>
+                      <a href={project.link} className='font-semibold' target="_blank" rel="noreferrer">{project.link}</a>
                       <div className="tags">
                         {
                           project.skills.map((skill, index) => (
-                            <span className="tag" key={index}>{skill}</span>
+                            <span className="tag mt-2 " key={index}>{skill}</span>
                           ))
                         }
                       </div>

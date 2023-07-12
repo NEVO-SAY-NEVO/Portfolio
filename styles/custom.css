@@ -219,6 +219,8 @@ body{
   }
 }
 
+
+
 .box-gradient {
   background: linear-gradient(to right, #8d02ff 0%, #0319da59 50%, #02e9fad5 100% );
   padding: 40px;
@@ -306,6 +308,12 @@ body{
   cursor: pointer;
   font-weight: 800;
   
+}
+.cursive {
+  font-family: cursive;
+}
+.georgia {
+  font-family:"Gill Sans", sans-serif;
 }
 .motto-btn > div {
   position: absolute;
@@ -420,27 +428,6 @@ body{
     translateY(calc(var(--glow-translate-y) * 1%));
   opacity: var(--glow-opacity);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -657,7 +644,18 @@ body{
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
+.card-project:hover{
+  animation: glowCard 1s linear infinite alternate;
+}
 
+@keyframes glowCard {
+  from {
+    box-shadow: 0 0 10px #3b06b682;
+  }
+  to {
+    box-shadow: 0 0 20px #aaa;
+  }
+}
 .poster {
   position: relative;
   top: 0;
@@ -706,7 +704,7 @@ body{
   background: rgba(31, 226, 252, 0.13);
   backdrop-filter: blur(16px) saturate(120%);
   transition: .3s;
-  color: #fff;
+  color: white;
   z-index: 2;
 }
 
@@ -736,15 +734,12 @@ body{
 
 .details .tags span {
   padding: .15rem .65rem;
-  color: #fff;
-  border: 1.5px solid rgba(15, 100, 197, 0.582);
+  border: 1.5px solid rgb(255, 255, 255);
   border-radius: 4px;
   border-radius: 50px;
 }
 
 .details .desc {
-  color: #fff;
-  opacity: .8;
   line-height: 1.5;
   margin-bottom: 1em;
 }

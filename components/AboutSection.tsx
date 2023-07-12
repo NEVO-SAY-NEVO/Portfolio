@@ -28,7 +28,7 @@ const AboutSection = () => {
                   <span className="text-[#e90cfd]">Figma</span> Designer
                 </h1>
                 <br />
-                <p className="font-semibold text-center text-white font-header text-4xl w-full ">I wake up every day and eat web applications for breakfast and mobile apps for dinner.</p>
+                <p className="font-semibold text-center text-white cursive text-4xl w-full ">I wake up every day and eat web applications for breakfast and mobile apps for dinner.</p>
                 <br />
                 <br />
                 <div className="flex justify-center">
@@ -36,14 +36,14 @@ const AboutSection = () => {
                     <div className="motto-btn">
                       <span className="glow"></span>
                       <div className="font-header text-3xl">
-                        Do unto others as you would like them to do to you!
+                        Do unto others as you would like them to do to you !
                       </div>
                     </div>
                     <br />
                     <br />
                   </div>
                 </div>
-                <p className="font-header text-4xl ">This is my only <span className="font-semibold uppercase text-[white]">motto</span> and I always treat my clients with <span className="font-semibold uppercase text-[white]">respect</span>, <span className="font-semibold uppercase text-[white]">responsibility</span> and the <span className="font-semibold uppercase text-[white]">best</span> so I am rewarded in the same way. <span className="font-semibold uppercase text-[white]">Long partnership</span> based on mutual <span className="font-semibold uppercase text-[white]">trust & respect</span> is always the most desirable career dream for me. 🙂</p>
+                <p className="cursive text-3xl ">This is my only <span className="font-semibold uppercase text-[white]">motto</span> and I always treat my clients with <span className="font-semibold uppercase text-[white]">respect</span>, <span className="font-semibold uppercase text-[white]">responsibility</span> and the <span className="font-semibold uppercase text-[white]">best</span> so I am rewarded in the same way. <span className="font-semibold uppercase text-[white]">Long partnership</span> based on mutual <span className="font-semibold uppercase text-[white]">trust & respect</span> is always the most desirable career dream for me. 🙂</p>
               </div>
             </div>
             <WorkExp />

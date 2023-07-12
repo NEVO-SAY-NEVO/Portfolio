@@ -12,7 +12,7 @@ export const Timeline = ({ children }: { children: React.ReactNode }) => {
     <motion.div initial={{ opacity: 0 }}
     whileInView={{ y: [-50, 0], opacity: 1 }} className='w-full mb-16 p-6 text-[#32e0ff]'>
 
-      <h2 className='text-center text-5xl mt-10  font-header font-bold mb-6 md:text-left'>Employment Experience</h2>
+      <h2 className='text-center text-5xl mt-10 mb-12  font-header font-bold md:text-left'>Employment Experience</h2>
 
       {children}
 
@@ -54,9 +54,9 @@ export const TimelineEvent = ({ active, children, last }: TimelineEventProps) =>
   );
 }
 
-const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-2xl relative bottom-1 font-semibold font-header text-[#32e0ff]'>{children}</p>;
+const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-2xl relative bottom-1 font-semibold text-[#32e0ff]'>{children}</p>;
 
-const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-xl leading-loose font-header font-semibold tracking-wide text-[#bfd8f5]'>{children}</p>;
+const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-xl leading-loose cursive font-semibold tracking-wide text-[#bfd8f5]'>{children}</p>;
 
 TimelineEvent.Title = TimelineEventTitle;
 
